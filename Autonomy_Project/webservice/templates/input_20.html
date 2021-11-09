@@ -1,0 +1,81 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<header>
+    <div class="header">
+        <h1><a href="/">HEALTH CARE</a></h1>
+        <div class="nav">
+            <ul>
+                <li><a href="#">main</a></li>
+                <li><a href="#">select</a></li>
+                <li><a href="#">input</a></li>
+                <li><a href="#">predict</a></li>
+                <li><a href="#">etc</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<body style="background-image: url(http://www.newsfreezone.co.kr/news/photo/202101/288173_280758_241.png); background-size: cover;">
+    <div class="input_section"; style="position:absolute; margin-top:-200px;">
+        <form method="POST", action="{{url_for('exercise_20')}}">
+            <div style="margin-left:50px; font-size:30px; color:floralwhite; ">빈칸 없이 작성해주셔야 정확한 결과가 나옵니다.</div>
+            <br><br><br>
+            <div style="margin-left:50px; font-size:20px; color:white;"> 나이 <input id='username', name="aa" style="margin-left:180px; width:150px; height:30px; "> </div><br>
+            <div style="margin-left:50px; font-size:20px; color:white;"> 키 <input id='username', name="bb" style="margin-left:200px; width:150px; height:30px; "> </div><br>
+            <div style="margin-left:50px; font-size:20px; color:white;"> 몸무게 <input id='username', name="cc" style="margin-left:160px; width:150px; height:30px; "> </div><br>
+            <div style="margin-left:50px; font-size:20px; color:white;"> 허리둘레 <input id='username', name="dd" style="margin-left:140px; width:150px; height:30px; "> </div><br>
+            <div style="margin-left:50px; font-size:20px; color:white;"> 최저 혈압 <input id='username', name="ee" style="margin-left:130px; width:150px; height:30px; "> </div><br>
+            <div style="margin-left:50px; font-size:20px; color:white;"> 최고 혈압 <input id='username', name="ff" style="margin-left:130px; width:150px; height:30px; "> </div><br>
+            <div style="margin-left:50px; font-size:20px; color:white;"> 악력 <input id='username', name="gg" style="margin-left:180px; width:150px; height:30px; "> </div><br>
+            <div style="margin-left:50px; font-size:20px; color:white;"> 윗몸 앞으로 굽히기 <input id='username', name="hh" style="margin-left:45px; width:150px; height:30px; "> </div><br>
+            <div style="margin-left:50px; font-size:20px; color:white;"> 팔교차 윗몸일으키기 <input id='username', name="ii" style="margin-left:30px; width:150px; height:30px; "> </div><br>
+            <div style="margin-left:50px; font-size:20px; color:white;"> 제자리 멀리뛰기 <input id='username', name="jj" style="margin-left:70px; width:150px; height:30px; "> </div><br>
+            <div style="margin-left:50px; font-size:20px; color:white;"> 성별(여) <input id='username', name="kk" style="margin-left:145px; width:150px; height:30px; "> </div><br>
+            <div style="margin-left:50px; font-size:20px; color:white;"> 성별(남) <input id='username', name="ll" style="margin-left:145px; width:150px; height:30px; ">
+            <button type="submit" value="predict!" onclick='submit()' style="cursor:pointer; border:0px; margin-left:50px; width:50px; height:30px; background-color: palevioletred; color:white;">제출</button>
+            </div>
+        </form>
+    </div>
+<div id="run_man" class="run_section" style="left:-100px;">
+    <div class="run">
+
+        <img src="../static/images/man.png">
+
+
+        <div class="hand1">
+            <img src="../static/images/hand1.png">
+        </div>
+
+        <div class="hand2">
+            <img src="../static/images/hand1.png">
+        </div>
+
+
+        <div class="foot1-1">
+            <img src="../static/images/foot1-1.png">
+            <div class="foot1-2">
+                <img src="../static/images/foot1-2.png">
+                <div class="foot1-3">
+                    <img src="../static/images/foot1-3.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="foot2-1">
+            <img src="../static/images/foot2-1.png">
+            <div class="foot2-2">
+                <img src="../static/images/foot2-2.png">
+                <div class="foot2-3">
+                    <img src="../static/images/foot2-3.png">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<header>
+    <div class="header">
+        <h1><a herf="/">HEALTH CARE</h1>
+        <div class="nav">
+            <ul>
+                <li><a href="/">main</a></li>
+                <li><a href="#">introduce</a></li>
+                <li><a href="/select">select age</a></li>
+                <li><a href="/input10">input</a></li>
+                <li><a href="/predict">predict</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+</header>
+<body class="ab_back">
+
+<div style="position:absolute; width:450px; margin-left:550px; margin-top:100px; text-align: center; z-index: 5">
+   <br><br>
+        <div class="input_list" style="text-align:center; margin-top:150px; color: floralwhite;">닉네임</div><br>
+        <form method="POST", action="{{url_for('nickname')}}">
+            <input id='username', name="nickname", style="width:450px; height:40px; border: 1px solid darkgrey;"><br><br><br>
+        </form>
+        <a href="/input10" style="position:absolute; margin-left:-225px;">
+            <button class="buttons" style="border-radius: 10px 10px 10px 10px; font-size:17px; border:0px; width:120px; height:60px; background-color: #2d2d2d; color:#F5dF4D; font-weight: bold">19세 이하</button>
+        </a>
+        <a href="/input20" style="position:absolute; margin-left:-60px;">
+            <button class="buttons" style="border-radius: 10px 10px 10px 10px; font-size:17px; border:0px; width:120px; height:60px; background-color: #2d2d2d; color:#F5dF4D; font-weight: bold">20 ~ 59세</button>
+        </a>
+        <a href="/input60" style="position:absolute; margin-left:105px;">
+            <button class="buttons" style="border-radius: 10px 10px 10px 10px; font-size:17px; border:0px; width:120px; height:60px; background-color: #2d2d2d; color:#F5dF4D; font-weight: bold">60세 이상</button>
+        </a>
+</div>
+<div class="box"></div>
+</body>
+</html>
