@@ -26,6 +26,18 @@ def main():
 def age():
     return render_template('ab.html')
 
+@app.route('/select2')
+def select2():
+    return render_template('ab_2.html')
+
+@app.route('/select3')
+def select3():
+    return render_template('ab_3.html')
+
+@app.route('/wait')
+def wait():
+    return render_template('wait.html')
+
 @app.route('/input10')
 def input10():
     return render_template('input_10.html')
@@ -37,6 +49,10 @@ def input20():
 @app.route('/input60')
 def input60():
     return render_template('input_60.html')
+
+@app.route('/predict_ex')
+def predict_ex():
+    return render_template('predict_ex.html')
 
 @app.route('/predict', methods=['POST'])
 def exercise_10():
