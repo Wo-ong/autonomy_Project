@@ -15,18 +15,32 @@
     }
 
     function start1() {
-        if (loader_width < 300){
+        if (loader_width < 800){
             loader_width++;
+        }
+
+        var loader_txt = document.getElementById("loader_text")
+
+        if (loader_width > 150){
+            document.getElementById("loader_text").innerHTML = "사용자 특성 파악중"
+        }
+
+        if (loader_width > 300){
+            document.getElementById("loader_text").innerHTML = "AI 분석중"
+        }
+
+        if (loader_width > 600){
+            document.getElementById("loader_text").innerHTML = "사용자에게 적절한 운동 처방중"
         }
 
         changewidth(loader_width);
 
-        if (loader_width == 300){
-            window.open('/predict_ex');
-            loader_width = 301;
+        if (loader_width == 800){
+            window.location.href='/predict_ex';
+            loader_width = 801;
         }
 
-        setTimeout(start1, 20);
+        setTimeout(start1, 2);
     }
 
 
@@ -147,10 +161,10 @@
 
     </div>
 </div>
-    <div id="loader1" style="position:absolute; background-color:#14c100; color:green; width:0px; height:50px; margin-top:-220px; margin-left:600px; border:1px black solid; text-align: center; font-size: 20px; line-height: 50px; z-index:1;">
+    <div id="loader1" style="position:absolute; background-color:#14c100; color:green; width:0px; height:50px; margin-top:-220px; margin-left:350px; border:1px black solid; text-align: center; font-size: 20px; line-height: 50px; z-index:1;">
     </div>
-    <div style="position:absolute; color:black; width:300px; height:50px; margin-top:-220px; margin-left:600px; border:1px black solid; text-align: center; font-size: 20px; line-height: 50px; z-index:2;">
-        분 석 중
+    <div id="loader_text" style="position:absolute; color:black; width:800px; height:50px; margin-top:-220px; margin-left:350px; border:1px black solid; text-align: center; font-size: 20px; line-height: 50px; z-index:2;">
+        사용자의 정보 입력중
     </div>
 </body>
 </html>

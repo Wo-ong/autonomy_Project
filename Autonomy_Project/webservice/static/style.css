@@ -3,10 +3,16 @@
     src: url(fonts/abster-webfont.woff) format('woff');
 }
 
+@font-face {
+    src: url("fonts/NanumSquareB.ttf");
+    font-family: "Nanum";
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Nanum";
 }
 
 .container{
@@ -24,7 +30,7 @@
 }
 
 .container .section:nth-child(1){
-    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0)), url(https://www.sisajournal.com/news/photo/202105/217323_125319_5357.jpg);
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0)), url(https://post-phinf.pstatic.net/MjAxOTEyMTFfMjgy/MDAxNTc2MDUwODAxODQ3.qV7kcYtxZZr7ycnGUsmKyj2-eYBThcJbaAf7Xr4uLzAg.T0x40qYIWBL2pXFG51QhCt6N5xSFZVKOZaicP3XGx5Yg.JPEG/image_8240955871576050766062.jpg?type=w1200);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -165,6 +171,7 @@
 .index_buttons{
     background-color: black;
     transition: background, 0.4s;
+    font-family: "Nanum";
 }
 
 .index_buttons:hover{
