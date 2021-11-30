@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body class="ab_back">
+    <div style="position: absolute; margin-left:530px; margin-top:50px; width:25px; height: 25px; background-color: #00b422; color:white; text-align: center;">1</div>
+    <div style="position: absolute; margin-left:760px; margin-top:50px; width:25px; height: 25px; background-color: #00b422; color:white; text-align: center;">2</div>
+    <div style="position: absolute; margin-left:990px; margin-top:50px; width:25px; height: 25px; background-color: #00b422; color:white; text-align: center;">3</div>
+    <div style="position: absolute; margin-left:530px; margin-top:62.5px; width:480px; height:5px; background-color: #00b422; z-index: -2;"></div>
+    <div style="position: absolute; margin-left:500px; margin-top:80px; color:#00b422">기본 정보 입력</div>
+    <div style="position: absolute; margin-left:720px; margin-top:80px; color:#00b422">신체 정보 입력</div>
+    <div style="position: absolute; margin-left:950px; margin-top:80px; color:#00b422">측정 정보 입력</div>
+
+    <div style="position:absolute; width:450px; height:500px; margin-left:550px; margin-top:180px; box-shadow:  1px 1px 7px 5px gray; text-align: center; background-color:white; z-index: 5">
+    <div style="position: absolute; color:black; margin-left:150px; margin-top:20px; font-size: 25px;">STEP3 <br> 측정 정보 입력</div>
+    <form method="POST", action="{{ url_for('re60_3') }}" id="test60_3">
+        <input name="sit_band" style="position:absolute; width:400px; height:50px; margin-left:-200px; margin-top:90px; border: 0px solid black; background-color:#eeeeee; font-size:20px;" placeholder="  앉아 윗몸 앞으로 굽히기(cm)">
+        <input name="sit_up" style="position:absolute; width:400px; height:50px; margin-left:-200px; margin-top:155px; border: 0px solid black; background-color:#eeeeee; font-size:20px;" placeholder="  교차윗몸일으키기(회/1분)">
+        <input name="sit_stand" style="position:absolute; width:400px; height:50px; margin-left:-200px; margin-top:220px; border: 0px solid black; background-color:#eeeeee; font-size:20px; " placeholder="  의자에 앉았다 일어서기(회/30초)">
+        <input name="return_3m" style="position:absolute; width:400px; height:50px; margin-left:-200px; margin-top:285px; border: 0px solid black; background-color:#eeeeee; font-size:20px; " placeholder="  의자에 앉아 3M표적 돌아오기(초)">
+        <input name="walk_8" style="position:absolute; width:400px; height:50px; margin-left:-200px; margin-top:350px; border: 0px solid black; background-color:#eeeeee; font-size:20px; " placeholder="  8자보행(초)">
+    </form>
+    <button class="index_buttons" type="submit" form="test60_3" href='/predict_60' style="position:absolute; width:120px; height:60px; text-align:center; font-size:20px; color:white; margin-left:-60px; margin-top: 420px; line-height: 60px; border-radius: 10px 10px 10px 10px; text-decoration-line:none;">운동 처방</button>
+</body>
+</html>

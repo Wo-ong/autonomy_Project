@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+     <meta charset="utf-8">
+    <link rel="stylesheet" href="../static/style.css">
+
+     <title>predict</title>
+
+</head>
+<body style="background-image: url(https://www.sciencetimes.co.kr/wp-content/uploads/2021/04/GettyImages-1128647143-scaled.jpg); background-size: cover; z-index: 1;">
+    <div style="position: absolute; width:1540px; height: 750px; background-color: white; opacity: 0.1; z-index:0;">
+    </div>
+    <div style="position: absolute; width:300px; height: 330px; text-align:center; opacity: 0.7; margin-left:100px; margin-top:70px; font-size:23px; background-color: black; color:white; border-radius: 10px 10px 10px 10px; z-index: 1;">
+        <span style="position: absolute; color:#ff9900; margin-left:-50px; font-weight: 900; font-size:25px; margin-top: 20px;">준비운동</span>
+        <br><br><br><br>
+        {{ pre_result[0] }}<br><br><br>
+        {{ pre_result[1] }}<br><br><br>
+        {{ pre_result[2] }}
+    </div>
+    <div style="position: absolute; width:300px; height: 330px; text-align:center; margin-left:600px; margin-top:70px; background-color: black; opacity: 0.7; border-radius: 10px 10px 10px 10px; color:white; font-size:23px; z-index: 1;">
+        <span style="position: absolute; color:#ff9900; margin-left:-40px; font-weight: 900; font-size:25px; margin-top: 20px;">본 운동</span>
+        <br><br><br><br>
+        {{ main_result[0] }}<br><br><br>
+        {{ main_result[1] }}<br><br><br>
+        {{ main_result[2] }}
+    </div>
+    <div style="position: absolute; width:300px; height: 330px; text-align:center; margin-left:1100px; margin-top:70px; background-color: black; opacity: 0.7; border-radius: 10px 10px 10px 10px; color:white; font-size:23px; z-index: 1;">
+        <span style="position: absolute; color:#ff9900; margin-left:-60px; font-weight: 900; font-size:25px; margin-top: 20px;">마무리 운동</span>
+        <br><br><br><br>
+        {{ last_result[0] }} <br><br><br>
+        {{ last_result[1] }}<br><br><br>
+        {{ last_result[2] }}
+    </div>
+    <div style="position: absolute; font-size:130px; color:black; margin-left:470px; margin-top:150px; opacity: 0.7; font-weight: 900;">
+        〉
+    </div>
+    <div style="position: absolute; font-size:130px; color:black; margin-left:970px; margin-top:150px; opacity: 0.7; font-weight: 900;">
+        〉
+    </div>
+<iframe width="300" height="180" src="{{ links[0] }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute; margin-top:480px; margin-left:100px;"></iframe>
+<iframe width="300" height="180" src="{{ links[1] }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute; margin-top:480px; margin-left:600px;"></iframe>
+<iframe width="300" height="180" src="{{ links[2] }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute; margin-top:480px; margin-left:1100px;"></iframe>
+</body>
+</html>
